@@ -32,6 +32,7 @@ class SharedViewModel(app: Application) : AndroidViewModel(app) {
         if (_quantity.value!! > 0) {
             _quantity.value = _quantity.value!! - 1
         }
-
     }
+
+
 }
