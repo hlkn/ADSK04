@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Show Me the Data!</string>
+    <string name="choose_stock_label">Choose your stock below</string>
+    <string name="firm_1_btn_label">IRMN</string>
+    <string name="firm_2_btn_label">BTMN</string>
+    <string name="firm_3_btn_label">ZMBI</string>
+    <string name="stock_info">Open: %.2f\n\nClose: %.2f\n\nChange: (%.2f)</string>
 </resources>
