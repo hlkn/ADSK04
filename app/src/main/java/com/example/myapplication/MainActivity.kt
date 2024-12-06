@@ -44,6 +44,7 @@ class MainActivity : FragmentActivity() {
         viewModel.quantity.observe(this) {
             updateBadge(it)
         }
+
     }
 
     private fun updateBadge(count: Int) {

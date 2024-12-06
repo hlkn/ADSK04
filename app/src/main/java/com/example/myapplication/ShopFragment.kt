@@ -30,6 +30,14 @@ class ShopFragment : Fragment() {
             ViewModelProvider(this)[SharedViewModel::class.java]
         }
 
+        viewModel?.products?.observe(viewLifecycleOwner, { products ->
+            val productNames = StringBuilder()
+            products.forEach {
+                productNames.appendLine(it.name)
+            }
+
+            binding.cartContentText.text = productNames.toString()
+        })
         val product = Product(
             name = "Item",
             imageFile = "image_file",
